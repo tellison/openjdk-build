@@ -37,7 +37,7 @@ git init
 "$WORKSPACE"/fast-export/hg-fast-export.sh -r "$WORKSPACE"/openjdk_hg
 for i in corba jaxp jaxws langtools jdk hotspot nashorn; do
 	# copy the additional repos in
-	cp -r "$WORKSPACE"/openjdk_hg/$i $i
+	cp -r ${WORKSPACE}/openjdk_hg/$i $i
 done
 git checkout
 # remove remaining mercurial stuff
